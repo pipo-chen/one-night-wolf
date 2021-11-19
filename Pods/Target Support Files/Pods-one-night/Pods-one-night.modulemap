@@ -1,0 +1,6 @@
+framework module Pods_one_night {
+  umbrella header "Pods-one-night-umbrella.h"
+
+  export *
+  module * { export * }
+}

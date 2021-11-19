@@ -14,9 +14,11 @@
 		4DD8A34327434F0900649361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD8A34227434F0900649361 /* Assets.xcassets */; };
 		4DD8A34627434F0900649361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD8A34427434F0900649361 /* LaunchScreen.storyboard */; };
 		4DD8A34927434F0900649361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8A34827434F0900649361 /* main.m */; };
+		F651AFA68C07049EBEAFB5D8 /* Pods_one_night.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81097173FE920CAD64C6047A /* Pods_one_night.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AC3BE1DD69C5734BB989BAE /* Pods-one-night.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one-night.debug.xcconfig"; path = "Target Support Files/Pods-one-night/Pods-one-night.debug.xcconfig"; sourceTree = "<group>"; };
 		4DD8A33327434F0800649361 /* one-night.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "one-night.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD8A33627434F0800649361 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DD8A33727434F0800649361 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		4DD8A34527434F0900649361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DD8A34727434F0900649361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DD8A34827434F0900649361 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D49AEE29DF11BC2802BC7F7 /* Pods-one-night.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one-night.release.xcconfig"; path = "Target Support Files/Pods-one-night/Pods-one-night.release.xcconfig"; sourceTree = "<group>"; };
+		81097173FE920CAD64C6047A /* Pods_one_night.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_one_night.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F651AFA68C07049EBEAFB5D8 /* Pods_one_night.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0387A3EA96D779170863755A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81097173FE920CAD64C6047A /* Pods_one_night.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4DD8A32A27434F0800649361 = {
 			isa = PBXGroup;
 			children = (
 				4DD8A33527434F0800649361 /* one-night */,
 				4DD8A33427434F0800649361 /* Products */,
+				68DEDD167B9AE19A7C2CE336 /* Pods */,
+				0387A3EA96D779170863755A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,15 @@
 			path = "one-night";
 			sourceTree = "<group>";
 		};
+		68DEDD167B9AE19A7C2CE336 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AC3BE1DD69C5734BB989BAE /* Pods-one-night.debug.xcconfig */,
+				7D49AEE29DF11BC2802BC7F7 /* Pods-one-night.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DD8A34C27434F0900649361 /* Build configuration list for PBXNativeTarget "one-night" */;
 			buildPhases = (
+				B2B9382934E5471123ADF762 /* [CP] Check Pods Manifest.lock */,
 				4DD8A32F27434F0800649361 /* Sources */,
 				4DD8A33027434F0800649361 /* Frameworks */,
 				4DD8A33127434F0800649361 /* Resources */,
+				4C186E9A8BA6830257E6C31B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C186E9A8BA6830257E6C31B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-one-night/Pods-one-night-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-one-night/Pods-one-night-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-one-night/Pods-one-night-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B9382934E5471123ADF762 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-one-night-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4DD8A32F27434F0800649361 /* Sources */ = {
@@ -226,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +357,7 @@
 		};
 		4DD8A34D27434F0900649361 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC3BE1DD69C5734BB989BAE /* Pods-one-night.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +385,7 @@
 		};
 		4DD8A34E27434F0900649361 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D49AEE29DF11BC2802BC7F7 /* Pods-one-night.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
